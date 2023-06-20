@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style2.css">
+    <!-- <link rel="stylesheet" href="all.min.css"> -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <form action="">
+        
+            <div>
+                <label for="task">Task:</label>
+            <input type="text" id="task-input">
+            </div>
+            <div class="statusholder">
+                <label for="status"><b>Status:</b></label>
+                <select name="status" id="status">
+                <option value="resolved"  id="green">&#xf14a; Resolved</option>
+                <option value="In-progress"  id="purple">  &#xf14a; In-progress</option>
+                <option value="unresolved"  id="red">&#xf057; Unresolved</option>
+                </select>
+            </div>
+
+<button type="submit" id="submit">Submit</button>
+
+    </form>
+
+<div class="todo-item">
+    <section class="todo-content">
+            <div class="index heading">index</div>
+        <div class="task heading">Task</div>
+        <div class="ellipsis"><i class="fa-solid fa-ellipsis-vertical"></i></div>
+        <div class="status heading">status</div>
+        <div class="bcontainer hidden">
+            <div class="m1"><img src="triangle-removebg-preview.png" alt=""></div>
+            <div class="buttons">
+                <button class="b1"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="b2"><i class="fa-solid fa-trash"></i></button>
+            </div>
+        </div>
+
+    </section>
+        
+</div>
+      
+</body>
+</html>

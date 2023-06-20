@@ -1,0 +1,145 @@
+.todo-item {
+    width: fit-content;
+    height: 100vh;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  .todo-item section:nth-child(even){
+    background-color:#B2BEB5;
+  }
+  
+  .todo-content {
+    position: relative;
+    display: flex;
+  }
+.index{
+    width: 50px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 5px;
+    border: .1em solid black;
+}
+.task{
+    width: 300px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 5px;
+    border: .1em solid black;
+    border-right: none;
+}
+.status{
+    width: 50px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 5px;
+    border: .1em solid black;
+    
+}
+.ellipsis{
+  border: .1em solid black;
+  border-left: none;
+  width: 20px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: .5em;
+  
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  padding: 2em;
+  gap: 1em;
+}
+#purple{
+  color: purple;
+}
+#green{
+  color: green;
+}
+#red{
+  color: red;
+}
+#status{
+  font-family:Arial, FontAwesome;
+  
+}
+.statusholder{
+  display: flex;
+  gap: 1em;
+}
+.heading{
+  text-align: center;
+}
+.bcontainer{
+  position: absolute;
+  z-index: 999;
+  border: none;
+  left:22.8em;
+  top: 1em;
+  flex-direction: column;
+  }
+
+  .hidden{
+    display: none;
+  }
+  /* .bcontainer.flex {
+  display: flex;
+} */
+
+  .bcontainer.flex {
+  display: flex;
+}
+.bcontainer.no-flex{
+  display: none;
+}
+
+  .m1 img{
+      height: 1em;
+      width: 1em;
+      border: none;
+  }
+  .m1{
+      display: flex;
+      justify-content: center;
+      align-items: end;
+      border-radius: none;
+      border: none;
+  }
+.buttons{
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  gap: .3em;
+  border-radius: .3em;
+  width: 3em;
+  padding: .3em;
+}
+.buttons button{
+ 
+ border: none;
+}
+.buttons button:hover{
+  color: white;
+}
+.b1{
+  background-color: green;
+}
+.b2{
+  background-color:red;
+}
+.fa-green{
+  color: green;
+}
+.fa-times-circle::before{
+  /* display: none; */
+}
